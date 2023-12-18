@@ -1,5 +1,5 @@
 {
-  "name": "react-native-vision-camera",
+  "name": "@StephanPartzsch/react-native-vision-camera",
   "version": "3.6.17",
   "description": "A powerful, high-performance React Native Camera library.",
   "main": "lib/commonjs/index",

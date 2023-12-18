@@ -201,8 +201,14 @@ public final class CameraView: UIView, CameraSessionDelegate {
       if let jsOrientation = orientation as? String {
         let orientation = try Orientation(jsValue: jsOrientation)
         config.orientation = orientation
+          
+        // Update orientation of previewLayer
+        previewView.videoPreviewLayer.connection?.setInterfaceOrientation(orientation)
       } else {
         config.orientation = .portrait
+          
+        // Update orientation of previewLayer
+        previewView.videoPreviewLayer.connection?.setInterfaceOrientation(.portrait)
       }
 
       // Format
